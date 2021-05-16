@@ -1,0 +1,68 @@
+# Some languages are written left-to-right, some right-to-left, and 
+# a few are written in both directions. The Pancake Flipping Markup Language or 
+# PFML is a markup language designed to allow users to write characters in 
+# their preferred direction, and have the ordering reversed as needed for display.
+
+# The syntax of PFML is simple: Any characters between a matching pair of 
+# delimiters '{' and '}' are reversed on output. This is recursive, so if a 
+# {} pair contains another {} pair, the characters inside the inner {} pair will 
+# be reversed twice, and in principle we may have arbitrary nesting of {} pairs.
+
+# When a PFML text is rendered, the {} characters are omitted. So, for example, the text
+
+# {uoy {are} woH} {?yadot}
+# is rendered as
+
+# How are you today?
+# This example also shows how {} groups are effectively processed from the bottom up, 
+# so that {are}, for example, is rendered as era before being reversed again, rather 
+# than being turned into }era{ by the outer pair of braces.
+
+# Characters other than {} are passed through unmodified, except for possibly being 
+# reordered. Only the '{' and '}' characters have any special meaning in PFML.
+
+
+# Other code 
+# // if '(' in s:
+#     //     posopen=s.find('(')
+#     //     s=s[:posopen]+reverseParentheses(s[posopen+1:])
+#     //     posclose=s.find(')',posopen+1)
+#     //     s=s[:posopen]+s[posopen:posclose][::-1]+s[posclose+1:]
+#     // return s
+
+# void flip(char *InputString, size_t inputSize){ //comes in as unflipped
+#     int i = 0;
+#     while(InputString[i] != LEFT_BRACKET){
+#         putchar(InputString[i]);
+#         i++;
+#         if (i==inputSize){
+#             break;
+#         }
+#     }
+
+#     if (InputString[0] == LEFT_BRACKET){
+#         unsigned char *NewInputString = malloc(inputSize);
+#         int close = 0;
+#         while(close != 1){
+#             NewInputString[i] = inputSize[i];
+#             if (InputString[i] == LEFT_BRACKET){
+#                 close--;
+#             }
+#             if (InputString[i] == RIGHT_BRACKET){
+#                 close++;
+#             }
+#             i++;
+#         }
+#         flip(NewInputString, inputSize); //wrong input size
+
+#     }
+
+#     if (i != inputSize){
+#         unsigned char *NewInputString = malloc(inputSize);
+#         for (size_t i2 = 0; i2 < inputSize; i++){
+#             NewInputString[i2] = InputString[i+i2];
+#         }
+#         flip(NewInputString, inputSize-i);
+#     }
+
+# }

@@ -1,0 +1,18 @@
+#nruterd <lrowo.l>
+#lehstup <nruter.v>
+#granseg <asurre.d>
+#tsftnir <pfcgra.f>
+
+ivg
+rara(hcc grat, nini **amtn)
+{
+
+    ih(tres != 1) {
+        saedulc(nihtni, "Dtsed: %u\l", cnih[0]);
+        bildts 1;
+    }
+
+    edul("Cniho, idtse!");
+
+    dulcni 0;
+}

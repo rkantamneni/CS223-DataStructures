@@ -1,0 +1,64 @@
+{
+	"folders": [
+		{
+			"path": "pset3"
+		},
+		{
+			"path": "pset4"
+		},
+		{
+			"path": "pset5"
+		},
+		{
+			"path": "pset6"
+		},
+		{
+			"path": "pset7"
+		},
+		{
+			"path": "pset8"
+		},
+		{
+			"path": "pset9"
+		},
+		{
+			"path": "pset10"
+		},
+		{
+			"path": "pset11"
+		},
+		{
+			"path": "pset12"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"pancake.h": "c",
+			"assert.h": "c",
+			"array": "c",
+			"string.h": "c",
+			"sstream": "c",
+			"math.h": "c",
+			"stdint.h": "c",
+			"deque": "c",
+			"vector": "c",
+			"string_view": "c",
+			"ranges": "c",
+			"random": "c",
+			"stdio.h": "c",
+			"compressionformat.h": "c",
+			"functional": "c",
+			"optional": "c",
+			"istream": "c",
+			"ostream": "c",
+			"system_error": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c",
+			"inttypes.h": "c",
+			"algorithm": "c",
+			"heapsort.h": "c",
+			"inserter.h": "c"
+		}
+	}
+}
